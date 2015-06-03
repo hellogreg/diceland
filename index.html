@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta name="viewport" content="width=320;height=420;user-scalable=true;initial-scale=1.0;">
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex">
+
+  <title>Diceland</title>
+
+  <!-- My CSS -->
+  <link rel="stylesheet" href="dice.css" />
+
+  <!-- External Scripts -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript" src="http://use.typekit.com/yhj1ckk.js"></script>
+  <script type="text/javascript">
+    try { Typekit.load(); } catch (e) { }
+  </script>
+
+  <!-- My Scripts -->
+  <script type="text/javascript" src="dice.js"></script>
+
+</head>
+
+<body>
+  
+  <canvas id="canvas" width="0" height="0" style="border: 0; margin: 0; padding: 0;">
+  </canvas>
+  
+  <ul>
+    <li><a href="#" class="button" id="restarter">Restart</a></li>
+    <li><a href="#" class="button" id="showabout">About Diceland</a></li>
+  </ul>
+  
+  <blockquote id="status"></blockquote>
+  <blockquote id="about">
+    <p>Diceland is a bare bones strategy game. Click one of your territories to be an attacker, 
+      and then select an adjacent enemy to attack. It's a little like Risk. Your attacking 
+      territory rolls one six-sided die, as does the defender. Diceland's twist is that your 
+      adjacent allies give you a bonus when attacking and defending. Each ally adds one point 
+      to your die roll. If the attacker's adjusted roll is higher than the defender's, then the 
+      attacker claims the territory.</p>
+    <p>I wrote this in JavaScript (with help from Typekit and jQuery). All of the 
+      artwork is created using JavaScript's canvas object. That means no image files and no 
+      Flash. The game works in most modern browsers (Firefox, Safari, Chrome, Opera, IE9) and 
+      on iOS devices (minus a few features).</p>
+    <p class="last">You can view the current source code <a href="dice.js">here</a>.</p>
+  </blockquote>
+  
+  <!-- Google Analytics -->
+  <script type="text/javascript">
+  //<![CDATA[
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-2778299-4']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  //]]>
+  </script>
+  <!-- End Google Analytics -->
+
+</body>
+</html>
