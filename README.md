@@ -1,6 +1,6 @@
 # diceland
 
-Diceland is a bare bones strategy game that I wrote several years ago.
+Diceland is a bare bones strategy game that I wrote several years ago, just to learn how to use the <canvas> element.
 
 Play it here: [hellogreg.github.io/diceland](http://hellogreg.github.io/diceland)
 
